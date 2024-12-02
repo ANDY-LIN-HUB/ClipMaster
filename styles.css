@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #2c3e50;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 200px; /* Space for the sidebar */
+    width: calc(100% - 400px); /* Adjust width to fill remaining space */
+    height: 100%;
+}
+
+/* Work Area (Center for Video Upload and Text Input) */
+.work-area {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%; /* Occupy the full width available */
+    max-width: calc(100% - 250px - 250px); /* Adjust to avoid overlapping with output clips */
+    flex-grow: 1; /* Allow expansion to fill remaining space */
+}
+
+/* Upload Video Block */
+.upload-block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-block h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.upload-block form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload-block input[type="file"] {
+    padding: 10px;
+}
+
+.upload-block button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upload-block button:hover {
+    background-color: #45a049;
+}
+
+/* Text Input Block */
+.text-input-block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-input-block h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.text-input-block textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+/* Output Clips Section (Right-side, fixed) */
+.output-clips {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output-clips h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.clip-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.clip-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.clip-item:hover {
+    background-color: #dcdde1;
+}

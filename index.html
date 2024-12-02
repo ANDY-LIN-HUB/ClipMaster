@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal App Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
+        <!-- Main Content -->
+        <div class="content">
+            <div class="work-area">
+                <!-- Video Upload Block -->
+                <div class="upload-block">
+                    <h2>Upload Your Video</h2>
+                    <form id="videoForm">
+                        <input type="file" id="videoFile" name="video" accept="video/*" required>
+                        <button type="submit">Upload Video</button>
+                    </form>
+                </div>
+
+                <!-- Text Input Block -->
+                <div class="text-input-block">
+                    <h2>Enter Text</h2>
+                    <textarea id="textInput" placeholder="Enter your text here..." rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Clips Section (Scroll) -->
+        <div class="output-clips">
+            <h2>Output Clips</h2>
+            <div class="clip-list">
+                <!-- Example clips -->
+                <div class="clip-item">Clip 1</div>
+                <div class="clip-item">Clip 2</div>
+                <div class="clip-item">Clip 3</div>
+                <div class="clip-item">Clip 4</div>
+                <div class="clip-item">Clip 5</div>
+                <div class="clip-item">Clip 6</div>
+                <div class="clip-item">Clip 7</div>
+                <div class="clip-item">Clip 8</div>
+                <div class="clip-item">Clip 9</div>
+                <div class="clip-item">Clip 10</div>
+                <!-- Additional clips go here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
